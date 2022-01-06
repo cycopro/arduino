@@ -1,0 +1,5 @@
+{
+    "sketch": "mysketch.ino",
+    "board": "arduino:avr:uno",
+    "port": "COM4"
+}
