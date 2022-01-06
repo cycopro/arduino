@@ -16,24 +16,16 @@ void loop(){
   i = digitalRead(sensorPin);
   if (i == HIGH) {
     
-    digitalWrite(ledPin1, HIGH);
+    digitalWrite(ledPin1, !
+    digitalRead(ledPin1));
     delay(1000);
-    digitalWrite(ledPin2, HIGH);
+    digitalWrite(ledPin2, !
+    digitalRead(ledPin2));
     delay(1000);
-    digitalWrite(ledPin3, HIGH);
+    digitalWrite(ledPin3, !
+    digitalRead(ledPin3));
     delay(1000);
     
-  }
-  i = 0;
-  
-  i = digitalRead(sensorPin);
-  if(i == HIGH){
-    digitalWrite(ledPin3, LOW);
-    delay(1000);
-    digitalWrite(ledPin2, LOW);
-    delay(1000);
-    digitalWrite(ledPin1, LOW);
-    delay(1000);
   }
   
 }
